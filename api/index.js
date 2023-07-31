@@ -20,7 +20,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 mongoose.connect('mongodb+srv://bhansaliparam:5Bxlpg2NKS14upk4@cluster0.hxjx7yx.mongodb.net/?retryWrites=true&w=majority')
 
 const salt = bcrypt.genSaltSync(10)
-const secret = 'hdfksdfgyeurfevfqgfdgsjdsjdfjsdjfjfjdss';
+const secret = 'hdfksdfgyeur';
 
 app.post('/register', async (req,res) => {
     const {username,password} = req.body;
